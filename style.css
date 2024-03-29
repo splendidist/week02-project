@@ -7,34 +7,32 @@ body {
   background-color: burlywood;
 }
 
-h1 {
-  height: 100px;
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: cloudy;
-  font-size: 80px;
-  color: white;
-}
-
 main {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 100px;
+  flex-wrap: wrap;
+  height: 100vh;
 }
 
 .section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+}
+
+h1,
+h2 {
+  font-family: cloudy;
+  font-size: 64px;
+  color: white;
 }
 
 .section1 p {
   font-family: cloudy;
   color: white;
   font-size: 40px;
-  padding-top: 50px;
 }
 
 .cookieBtn {
@@ -51,7 +49,7 @@ button:hover {
   cursor: pointer;
 }
 
-.cookieBtn:active {
+button:active {
   transform: translateY(5px);
 }
 
@@ -59,12 +57,18 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-evenly;
   width: 350px;
-  height: 600px;
+}
+
+h2 {
+  width: 350px;
+  display: flex;
+  justify-content: center;
 }
 
 .cat {
-  background-image: url(https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f431.png);
+  background-image: url("https://cdn-icons-png.freepik.com/256/6988/6988878.png");
   height: 125px;
   width: 125px;
   background-size: cover;
@@ -73,7 +77,7 @@ button:hover {
   border: none;
 }
 
-.section2 p {
+.cpsNumber {
   width: 350px;
   display: flex;
   justify-content: center;
