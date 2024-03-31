@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: burlywood;
+  background-color: wheat;
 }
 
 main {
@@ -29,10 +29,12 @@ h2 {
   color: white;
 }
 
-.section1 p {
+.counterNumber {
   font-family: cloudy;
   color: white;
   font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
 }
 
 .cookieBtn {
@@ -53,12 +55,25 @@ button:active {
   transform: translateY(5px);
 }
 
+button:disabled {
+  transform: none;
+  cursor: auto;
+}
+
+.section1-background {
+  padding: 40px 60px;
+  background-color: tan;
+  border: 10px solid chocolate;
+  border-radius: 25px;
+}
+
 .section2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-evenly;
   width: 350px;
+  padding: 40px 0px;
 }
 
 h2 {
@@ -68,10 +83,11 @@ h2 {
 }
 
 .cat {
-  background-image: url("https://cdn-icons-png.freepik.com/256/6988/6988878.png");
+  background-image: url("https://img.icons8.com/?size=256&id=121428&format=png");
   height: 125px;
   width: 125px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   border: none;

@@ -9,6 +9,8 @@ const upgradeBtn6 = document.getElementById("upgradeBtn6");
 const counterNumber = document.getElementById("counterNumber");
 const cpsNumber = document.getElementById("cpsNumber");
 
+const catInfo1 = document.getElementById("cat-info-one");
+
 const gameStats = {
   cookies: 0,
   cps: 0,
@@ -118,7 +120,8 @@ setInterval(function () {
   if (counterNumber.textContent >= 10 || cpsNumber.textContent >= 1) {
     upgradeBtn1.disabled = false;
     upgradeBtn1.style.backgroundImage =
-      "url('https://cdn-icons-png.freepik.com/512/616/616430.png')";
+      "url('https://cdn-icons-png.freepik.com/512/616/616430.png";
+    catInfo1.style.color = "black";
   }
   if (cpsNumber.textContent >= 50) {
     upgradeBtn2.disabled = false;
