@@ -7,7 +7,6 @@ const upgradeBtn4 = document.getElementById("upgradeBtn4");
 const upgradeBtn5 = document.getElementById("upgradeBtn5");
 const upgradeBtn6 = document.getElementById("upgradeBtn6");
 const resetBtn = document.getElementById("resetBtn");
-const allCats = document.querySelector(".cat");
 
 //Text
 const counterNumber = document.getElementById("counterNumber");
@@ -118,7 +117,7 @@ setInterval(function () {
   updateStorage();
 }, 1000);
 
-//Unlock the next cat upgrade and change image src quickly
+//Unlock upgrades
 setInterval(function () {
   if (counterNumber.textContent >= 10 || cpsNumber.textContent >= 1) {
     upgradeBtn1.disabled = false;
@@ -144,16 +143,31 @@ setInterval(function () {
     upgradeBtn6.disabled = false;
     upgradeBtn6.style.backgroundImage = "url('./assets/cat icon.png')";
   }
-}, 0);
+}, 1);
 
-//Reset
+//Reset game
 
 function resetGame() {
   gameStats.cookies = 0;
   gameStats.cps = 0;
   updatePage();
-  allCats.disabled = true;
-  allCats.style.backgroundImage =
+  upgradeBtn1.disabled = true;
+  upgradeBtn1.style.backgroundImage =
+    "url('https://img.icons8.com/?size=256&id=121428&format=png')";
+  upgradeBtn2.disabled = true;
+  upgradeBtn2.style.backgroundImage =
+    "url('https://img.icons8.com/?size=256&id=121428&format=png')";
+  upgradeBtn3.disabled = true;
+  upgradeBtn3.style.backgroundImage =
+    "url('https://img.icons8.com/?size=256&id=121428&format=png')";
+  upgradeBtn4.disabled = true;
+  upgradeBtn4.style.backgroundImage =
+    "url('https://img.icons8.com/?size=256&id=121428&format=png')";
+  upgradeBtn5.disabled = true;
+  upgradeBtn5.style.backgroundImage =
+    "url('https://img.icons8.com/?size=256&id=121428&format=png')";
+  upgradeBtn6.disabled = true;
+  upgradeBtn6.style.backgroundImage =
     "url('https://img.icons8.com/?size=256&id=121428&format=png')";
 }
 
