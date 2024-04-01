@@ -4,7 +4,12 @@
 }
 
 body {
+  cursor: url("./assets/cat cursor.png"), auto;
   background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 main {
@@ -12,7 +17,10 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 95vh;
+  background-color: sandybrown;
+  width: 97vw;
+  margin-top: 25px;
 }
 
 .section1 {
@@ -29,12 +37,12 @@ h2 {
   color: white;
 }
 
-.counterNumber {
-  font-family: cloudy;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 60px;
+.section1-background,
+.section2 {
+  padding: 40px 60px;
+  background-color: tan;
+  border: 10px solid chocolate;
+  border-radius: 25px;
 }
 
 .cookieBtn {
@@ -45,34 +53,36 @@ h2 {
   background-image: url("https://static.vecteezy.com/system/resources/previews/009/400/368/non_2x/homemade-tasty-cookies-clipart-design-illustration-free-png.png");
   background-size: cover;
   background-position: center;
+  cursor: url("./assets/cat cursor.png"), auto;
 }
 
-button:hover {
-  cursor: pointer;
+.counterNumber {
+  font-family: cloudy;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px 0px 20px 0px;
 }
 
-button:active {
-  transform: translateY(5px);
-}
-
-button:disabled {
-  transform: none;
-  cursor: auto;
-}
-
-.section1-background {
-  padding: 40px 60px;
-  background-color: tan;
-  border: 10px solid chocolate;
-  border-radius: 25px;
+.resetBtn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: cloudy;
+  font-size: 16px;
+  text-align: center;
+  margin: 0px 180px;
+  cursor: url("./assets/cat cursor.png"), auto;
 }
 
 .section2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: space-evenly;
-  width: 350px;
+  align-self: center;
+  width: 600px;
+  height: 75%;
   padding: 40px 0px;
 }
 
@@ -80,6 +90,14 @@ h2 {
   width: 350px;
   display: flex;
   justify-content: center;
+}
+
+.cat-shop {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 450px;
 }
 
 .cat {
@@ -91,6 +109,7 @@ h2 {
   background-position: center;
   background-color: transparent;
   border: none;
+  cursor: url("./assets/cat cursor.png"), auto;
 }
 
 .cpsNumber {
@@ -101,4 +120,17 @@ h2 {
   font-family: cloudy;
   color: white;
   font-size: 40px;
+}
+
+button:active {
+  transform: translateY(5px);
+}
+
+button:disabled {
+  transform: none;
+  cursor: url("./assets/cat cursor.png"), auto;
+}
+
+.resetBtn:hover {
+  color: chocolate;
 }
