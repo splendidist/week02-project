@@ -2,6 +2,8 @@
 
 🍪 Cookie Clicker
 
+Screen Dimensions: 1881px x 1154px
+
 🎯 Please mention the requirements you met and which goals you achieved for this assignment.
 
 For this assignment I:
