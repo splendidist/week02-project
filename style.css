@@ -1,3 +1,8 @@
+@font-face {
+  font-family: cloudy;
+  src: url(./font/Cloudy-0W244.ttf);
+}
+
 * {
   padding: 0px;
   margin: 0px;
