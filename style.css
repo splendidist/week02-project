@@ -6,144 +6,115 @@
 body {
   cursor: url("./assets/cat cursor.png"), auto;
   background-color: wheat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  padding: 20px;
 }
 
 main {
+  background-color: sandybrown;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  height: 95vh;
-  background-color: sandybrown;
-  width: 97vw;
-  margin-top: 25px;
-}
-
-.about-section {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  height: 65%;
-  color: white;
-  text-align: center;
-}
-
-.about-section-text {
-  padding-top: 20px;
-}
-
-.about-section-text {
-  font-size: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.about-section-text li {
-  padding-top: 5px;
-}
-
-.section1 {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  height: calc(100vh - 80px); /*balances padding from body and main*/
+  padding: 20px;
 }
 
-h1,
-h2 {
-  font-family: cloudy;
-  font-size: 64px;
-  color: white;
+section {
+  width: 30%;
 }
 
-.section1-background,
-.section2,
-.about-section {
-  padding: 40px 60px;
+.section-background {
+  padding: 30px;
   background-color: tan;
   border: 10px solid chocolate;
   border-radius: 25px;
+  font-size: 15px;
+  font-family: cloudy;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 80px;
+}
+
+h2,
+.cpsNumber,
+.counterNumber {
+  font-size: 48px;
+  text-align: center;
+}
+
+h1,
+h2,
+.cpsNumber,
+.counterNumber,
+.resetBtn {
+  font-family: cloudy;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  text-align: center;
 }
 
 .cookieBtn {
-  height: 500px;
-  width: 500px;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/009/400/368/non_2x/homemade-tasty-cookies-clipart-design-illustration-free-png.png");
+  cursor: url("./assets/cat cursor.png"), auto;
+  /*button styles*/
+  height: 400px;
+  width: 100%;
   border: none;
   background-color: transparent;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/009/400/368/non_2x/homemade-tasty-cookies-clipart-design-illustration-free-png.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  cursor: url("./assets/cat cursor.png"), auto;
-}
-
-.counterNumber {
-  font-family: cloudy;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  margin: 30px 0px 20px 0px;
+  background-repeat: no-repeat;
 }
 
 .resetBtn {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-family: cloudy;
+  cursor: url("./assets/cat cursor.png"), auto;
+  /*button styles*/
   font-size: 16px;
   text-align: center;
-  margin: 0px 180px;
-  cursor: url("./assets/cat cursor.png"), auto;
-}
-
-.section2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-evenly;
-  align-self: center;
-  width: 600px;
-  height: 75%;
-  padding: 40px 0px;
-}
-
-h2 {
-  width: 350px;
-  display: flex;
-  justify-content: center;
+  background-color: transparent;
+  border: none;
 }
 
 .cat-shop {
-  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 450px;
+  width: 100%;
 }
 
 .cat {
   background-image: url("https://img.icons8.com/?size=256&id=121428&format=png");
+  cursor: url("./assets/cat cursor.png"), auto;
+  /*button styles*/
   height: 125px;
-  width: 125px;
+  width: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   border: none;
-  cursor: url("./assets/cat cursor.png"), auto;
 }
 
-.cpsNumber {
-  width: 350px;
-  display: flex;
-  justify-content: center;
-  align-self: end;
-  font-family: cloudy;
-  color: white;
-  font-size: 40px;
+.cpsNumber,
+.counterNumber,
+.resetBtn {
+  margin-top: 30px;
 }
+
+/*button element state*/
 
 button:active {
   transform: translateY(5px);
