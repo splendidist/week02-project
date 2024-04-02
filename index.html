@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Catisserie: a fun cookie clicker game with cats!"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
     <title>Câtisserie</title>
@@ -37,9 +41,11 @@
 
       <section>
         <div class="section-background">
-          <button id="cookieBtn" class="cookieBtn"></button>
+          <button id="cookieBtn" class="cookieBtn" aria-label="Cookie"></button>
           <p class="counterNumber" id="counterNumber">0</p>
-          <button class="resetBtn" id="resetBtn">Reset Game</button>
+          <button class="resetBtn" id="resetBtn" aria-label="Reset">
+            Reset Game
+          </button>
         </div>
       </section>
 
@@ -47,12 +53,42 @@
         <div class="section-background">
           <h2>Cats</h2>
           <div class="cat-shop">
-            <button id="upgradeBtn1" class="cat" disabled></button>
-            <button id="upgradeBtn2" class="cat" disabled></button>
-            <button id="upgradeBtn3" class="cat" disabled></button>
-            <button id="upgradeBtn4" class="cat" disabled></button>
-            <button id="upgradeBtn5" class="cat" disabled></button>
-            <button id="upgradeBtn6" class="cat" disabled></button>
+            <button
+              id="upgradeBtn1"
+              class="cat"
+              disabled
+              aria-label="Cat 1"
+            ></button>
+            <button
+              id="upgradeBtn2"
+              class="cat"
+              disabled
+              aria-label="Cat 2"
+            ></button>
+            <button
+              id="upgradeBtn3"
+              class="cat"
+              disabled
+              aria-label="Cat 3"
+            ></button>
+            <button
+              id="upgradeBtn4"
+              class="cat"
+              disabled
+              aria-label="Cat 4"
+            ></button>
+            <button
+              id="upgradeBtn5"
+              class="cat"
+              disabled
+              aria-label="Cat 5"
+            ></button>
+            <button
+              id="upgradeBtn6"
+              class="cat"
+              disabled
+              aria-label="Cat 6"
+            ></button>
           </div>
           <p class="cpsNumber">cps:<span id="cpsNumber">0</span></p>
         </div>

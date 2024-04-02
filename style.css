@@ -73,7 +73,7 @@ ul li {
 }
 
 .cookieBtn {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/009/400/368/non_2x/homemade-tasty-cookies-clipart-design-illustration-free-png.png");
+  background-image: url("./assets/cookie.png");
   cursor: url("./assets/cat cursor.png"), auto;
   /*button styles*/
   height: 400px;
